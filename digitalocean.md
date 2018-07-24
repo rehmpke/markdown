@@ -1,8 +1,9 @@
 # DigitalOcean build and deployment
 
-Building a deployment proceedure to the web.
+Building a deployment proceedure to the web. This builds an Ubuntu 16.04.4 x64 instance. Adds NGINX web server.
 
-## Setup a droplet
+## Create a server
+### Setup a droplet
 
 -   Then a droplet type which was Ubuntu 16.04.4 x64, memory 1gb, 1 vCPUs, SSD Disk 25GB, Transfer 1 TB, Price $5/month 
 -   Choose a datacenter region. I used New York 3.
@@ -10,12 +11,15 @@ Building a deployment proceedure to the web.
 -   Choose a hostname that is appropriate and meaningful as cannot be changed. should have something to do with its purpose. ex. rehmpke_ub_webserver_01
 -   Then click the create button.
 
-## Copy the IP
+### Copy the IP
 -   Then I copied my ip from the new droplet
 
-## Connect Iterm to the server and update
+### Connect Iterm to the server and update
 -   Then I opened my iterm and used z to go to the ssh folder
--   If don't have one create ssh key pairs public and private with `ssh-keygen -t rsa`
+-   If don't have one create ssh key pairs public and private with 
+
+        ssh-keygen -t rsa
+    
 -   Then I used my `ssh -i public_key root@ip.com` to get into the newly created server
        -i option means to use identity public_key to ssh in.
 -   Then I used apt to update the server `apt update`
@@ -38,11 +42,13 @@ Building a deployment proceedure to the web.
 -   `pwd` to verify
 
 Do a test to see if have permissions
-       - $ `sudo cat /var/log/auth.log`
+
+    $ sudo cat /var/log/auth.log
 
 ## Node setup and installation
 To get the node six package which is a slightly better node version we run the curl command and pipe it to bash. 
--   $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+  
+    $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 Once that is finished.
 
@@ -72,26 +78,36 @@ Just to do a test we could do a 'npm config get prefix' but we could do an insta
 ## Server setup
 Change the working directory to the www one.    If it does not exist
       `$ sudo mkdir /var/www/`
--   $ cd /var/www/
-  Change ownership of www to test user as we created that directory.
--   $ sudo chown -R $USER:$USER /var/www
+
+    $ cd /var/www/
+
+Change ownership of www to test user as we created that directory.
+
+    $ sudo chown -R $USER:$USER /var/www
 
 Then clone a depository into it.
--   $ git clone https://github.com/rehmpke/mysite.git
+
+    $ git clone https://github.com/rehmpke/mysite.git
   Then cd into it.
-  -    $ cd fsfe2
+      
+    $ cd fsfe2
   Then npm i to install it's package.
-  -    $ npm i
+  
+    $ npm i
 
 ## Server Security
 Make a ssh directory
-   -  $ mkdir -p ~/.ssh
-I opened a new Iterm tab and copied my public_key using pbcopy
-   -  $ pbcopy < public_key.public
-and paste our Public key into a file named authorized_keys
-   -  $ vi ~/.ssh/authorized_keys
 
-!!! WARNING: login to the added user test so we can be sure we can get back into the server before removing the root user password access from the command line !!!
+    $ mkdir -p ~/.ssh
+I opened a new Iterm tab and copied my public_key using pbcopy
+
+    $ pbcopy < public_key.public
+
+and paste our Public key into a file named authorized_keys
+
+    $ vi ~/.ssh/authorized_keys
+
+**!!! WARNING: login to the added user test so we can be sure we can get back into the server before removing the root user password access from the command line !!!**
 
 once we have tested the ssh -i public_key test@ip address then we need to give root a password so log back in to root and give a password
 
@@ -151,7 +167,7 @@ Study `find` and `grep`. Find looks for a file. grep looks for things in files.
 
 zgrep to look in gziped files.
 
-## https
+## Setup secure site with HTTPS
 install nginx
     
     $ sudo apt-get install nginx
