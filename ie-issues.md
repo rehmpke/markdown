@@ -7,18 +7,19 @@ That being said, we are not just affecting a few end users with browser compatib
 ## Search box issue in IE11
 
 > Appears the issue only occurs with IE11 in search box when hitting return. If you hit the magnifying icon search works fine. Or can switch to IE11 compatibility mode. Currently we only have a handful of users on campus using IE11. Most users are using IE10 or Chrome. We could look at have IE11 in compatibility mode however, that might comprise other web pages being access using IE11 on campus.
-_**– John Alverado**_
-
->>SharePoint 2010 compatibility issue with IE11—
-Hi Jo in IT asked me to look at the home page search field not working in IE. This happened as the desktops computers updated to IE11. I found this to be an incompatibility issue with IE11 and SharePoint 2010. As I believed this to be a compatibility issue, I turned on compatibility mode in IE11 and then search works as expected.
-_**- Roger Ehmpke**_
+> _**– John Alverado**_
+>
+>> SharePoint 2010 compatibility issue with IE11—
+>> Hi Jo in IT asked me to look at the home page search field not working in IE. This happened as the desktops computers updated to IE11. I found this to be an incompatibility issue with IE11 and SharePoint 2010. As I believed this to be a compatibility issue, I turned on compatibility mode in IE11 and then search works as expected.
+>> _**- Roger Ehmpke**_
 
 ## Compatibility mode
 
 ### What does compatibility mode mean for SharePoint?
 
 ### How is it set in master page of a SharePoint site?
-`<meta http-equiv="X-UA-Compatible" content="IE=8" />`
+
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
 
 IT can also set compatibility mode on by adding kcc.edu into the list of sites to use it through a panel in IE.
 
@@ -31,7 +32,7 @@ Support for the code used to build the site is drifting [The new "End of Life" u
 ## Will there be an upgrade to the current version of SharePoint in the near future?
 
 > **Question** — Will there be an upgrade to the current share point in the future?
-_**– John Alverado**_
+> _**– John Alverado**_
 
 As SharePoint 2010 began getting close to its end of date support through Microsoft, Web services rethought SharePoint as our public facing site CMS.
 

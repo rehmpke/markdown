@@ -1,17 +1,19 @@
 # Bash, Vim & Regex
 
 ## CD
-	CD
-
 CD can instantly send you to the home no need to type ~ or cd ~
+
+    CD
 
 ## LS
 
-also `ls -1` can create a single entry per line list of items.
+Also, can create a single entry per line list of items.
+
+    ls -1
 
 ## mkdir 
 
-can create multiple levels of itself just by adding -p. that makes it easy to do something like r/r/r/
+Can create multiple levels of itself just by adding -p. that makes it easy to do something like r/r/r/
 
 ## Commands to help reduce repetitive typing
 
@@ -34,4 +36,4 @@ is for word count doesn't have a lot of options simple
 
 ## More on paths
 
-if you add > you can add things into a file. if you add >> you can append them to the end of the file.
+if you add `>` you can add things into a file. if you add `>>` you can append them to the end of the file.

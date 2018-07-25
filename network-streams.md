@@ -1,7 +1,5 @@
 # Network Streams Learning
 
-As I am working on really learning this stuff need to document so that is what I am doing.
-
 TCP vs. UDP
 TCP gives feedback along the way is more popular.
 
