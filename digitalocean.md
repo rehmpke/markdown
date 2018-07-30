@@ -8,13 +8,16 @@ Building a deployment proceedure to the web. This builds an Ubuntu 16.04.4 x64 i
 -   Then a droplet type which was Ubuntu 16.04.4 x64, memory 1gb, 1 vCPUs, SSD Disk 25GB, Transfer 1 TB, Price $5/month 
 -   Choose a datacenter region. I used New York 3.
 -   Then I added my public ssh key.
--   Choose a hostname that is appropriate and meaningful as cannot be changed. should have something to do with its purpose. ex. rehmpke_ub_webserver_01
+-   Choose a hostname that is appropriate and meaningful as cannot be changed. should have something to do with its purpose. ex.rehmpke\_ub\_webserver\_01
+
 -   Then click the create button.
 
 ### Copy the IP
+
 -   Then I copied my ip from the new droplet
 
 ### Connect Iterm to the server and update
+
 -   Then I opened my iterm and used z to go to the ssh folder
 -   If don't have one create ssh key pairs public and private with 
 
