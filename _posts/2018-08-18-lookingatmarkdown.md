@@ -1,3 +1,9 @@
+---
+layout: "post"
+title: "Val and Troy's pool"
+date: "2018-08-18 08:58"
+---
+
 # Val and Troy's pool
 
 ## Back wash the pool

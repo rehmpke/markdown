@@ -1,3 +1,9 @@
+---
+layout: "post"
+title: "DigitalOcean build and deployment"
+date: "2018-08-18 08:58"
+---
+
 # DigitalOcean build and deployment
 
 Building a deployment proceedure to the web. This builds an Ubuntu 16.04.4 x64 instance. Adds NGINX web server.

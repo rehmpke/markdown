@@ -1,3 +1,9 @@
+---
+layout: "post"
+title: "Bash, Vim & Regex"
+date: "2018-08-18 08:58"
+---
+
 # Bash, Vim & Regex
 
 ## CD

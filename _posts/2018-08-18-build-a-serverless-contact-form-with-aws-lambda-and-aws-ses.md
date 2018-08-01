@@ -1,3 +1,9 @@
+---
+layout: "post"
+title: "Building a serverless contact form with AWS Lambda and AWS SES"
+date: "2018-08-18 08:58"
+---
+
 # Building a serverless contact form with AWS Lambda and AWS SES
 
 my portfolio site has had a formspree.io form hooked up to it for the longest time. I am changing that as it first off sends my information through them. Secondly it makes it so I can't really make adjustments to the returned page.

@@ -1,7 +1,7 @@
 ---
 layout: "post"
-title: "Blogging learnings"
-date: "2016-03-17 08:35"
+title: "Blogging-learning"
+date: "2018-08-18 08:58"
 ---
 
 A [quote from Julia McCoy](https://expresswriters.com/our-top-10-strategies-to-becoming-an-expert-blogger/) in the expresswriters.com site is, 'A blog is just an online journal.'

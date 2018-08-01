@@ -1,3 +1,9 @@
+---
+layout: "post"
+title: "Google Tag Manager and Sub Domains"
+date: "2018-08-18 08:58"
+---
+
 # Google Tag Manager and Sub Domains
 
 Working on the [news.kcc.edu](https://news.kcc.edu) site we needed to add Google Tag Manager.

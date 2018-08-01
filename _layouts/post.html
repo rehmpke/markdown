@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<main class="position__offset-fixed-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>{{ page.title }}</h2>
+        <p><strong>Date: {{ page.date | date: "%m/%d/%y" }}</strong></p>
+
+        {% if page.video_content == true %}
+          <div class="text-center">
+            <div class="positioning__iframe-wrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.video_link | remove: "https://youtu.be/" }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        {% endif %}
+        <div class="editable">
+          {{ content }}
+        </div>
+        {% if page.video_content == true %}
+          <a class="btn btn-danger buttons__custom-danger" href="https://www.youtube.com/channel/UCpolj7IezPpI0zv6tFcmEJw?sub_confirmation=1" target="_blank" rel="noopener"><img src="{{ page.baseurl }}assets/img/youtube-white.svg" class="buttons__yt-subscribe" alt="">&nbsp;Subscribe</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLEnNvZd4X-lVFQK8Ke8jkpr7NvdTSI5W9" target="_blank" rel="noopener">More Newsroom Videos</a>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</main>

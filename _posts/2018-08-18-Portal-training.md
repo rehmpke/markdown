@@ -1,3 +1,9 @@
+---
+layout: "post"
+title: "Portal training"
+date: "2018-08-18 08:58"
+---
+
 # My.kcc.edu — Adding content into the portal
 
 ## Info sites and team sites
@@ -31,4 +37,3 @@ Site Contents vs. Content and Structure
 -   Images should be sized appropriately before adding them
 -   Popular image sizes are based on standard ratios
 -   Image editing tools [www.photoresizer.com](www.photoresizer.com)
-

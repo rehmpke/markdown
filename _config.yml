@@ -1,1 +1,100 @@
-theme: jekyll-theme-cayman
+title: "Roger Ehmpke's Blog"
+name: "RogerBlog"
+url: blog.rogerehmpke.com
+timezone: America/Chicago
+url: "http://blog.rogerehmpke.com"
+google_analytics_key:
+collections:
+  announcements:
+    output: false
+defaults:
+- scope:
+    type: ''
+  values:
+    image: "/uploads/"
+- scope:
+    path: ''
+    type: drafts
+  values:
+    image: "/uploads/"
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    title: ''
+    baseurl: ../../../../
+    permalink: /:year/:month/:day/:title:output_ext
+    image: "/uploads/"
+permalink: pretty
+email: roger@rogerehmpke.com
+description: > # this means to ignore newlines until "baseurl:"
+# Delete this comment and place description on this line
+baseurl: "" # the subpath of your site, e.g. /blog
+# include:
+#   - "_pages"
+#   - "_posts"
+
+## include future posts? (true or false)
+future: false
+## Plugins:
+#plugins:
+#  - rssgenerator
+#  - jekyll-feed
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - "gulpfile.js"
+  - "node_modules"
+  - "npm-debug.log"
+  - "package.json"
+  - "package-lock.json"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulpconfig.yml"
+  - "/docs/"
+  - "yarn.lock"
+  - "/assets/adobe/"
+  - "gulp-tasks"
+  - "install.sh"
+  - "siteicon.png"
+
+uploads_dir: # specifies the default uploads directory for CloudCannon
+  - "uploads/"
+
+_comments:
+  layout: Do NOT modify layouts. It may break things.
+  baseurl: Do NOT modify baseurl. It WILL break all page links.
+  description: "Descriptions are seen by search engines like Google and displayed in search results."
+  video_content: Be sure to clear the check-box if your post does not contain a YouTube video.
+  video_link: Paste your YouTube share link here. <br>YouTube share links look like "https://youtu.be/RVd1gnq4iOc"
+  press_release: Check this box to display the press-release info at the bottom of the post.
+
+_options:
+  content:
+    format: p h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    underline: true
+    subscript: true
+    superscript: true
+    indent: true
+    outdent: true
+    image: true
+    table: true
+    left: align-left
+    center: center-this-text
+    right: align-right
+    removeformat: true
+    link: true
+    numberedlist: true
+    bulletedlist: true
+    undo: true
+    redo: true
+    styles: /assets/css/content.css
+
+_defaults:
+  image: "/uploads/"
