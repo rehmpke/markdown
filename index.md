@@ -2,7 +2,7 @@
 layout: default
 baseurl: ''
 title: Home page
-description: ''
+description: 'testing home page'
 ---
 
 Testing to see if I got rid of master.
