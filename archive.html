@@ -1,0 +1,33 @@
+---
+title: Archive
+layout: default
+baseurl: ../
+---
+<section class="archive-post-list position__offset-fixed-nav">
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      {% for post in site.posts %}
+          {% assign currentDate = post.date | date: "%Y" %}
+          {% if currentDate != myDate %}
+              {% unless forloop.first %}</ul>{% endunless %}
+              <h2>{{ currentDate }}</h2>
+              <ul class="archive__list">
+              {% assign myDate = currentDate %}
+          {% endif %}
+          <li><a href="{{ post.url }}" class="archive__link-item"><span class="archive__post-meta">{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></li>
+          {% if forloop.last %}</ul>{% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="editable">
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
