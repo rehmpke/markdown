@@ -9,7 +9,7 @@ article_lead: >-
   IE issue search box . . .
 video_content: false
 video_link: ''
-category: googlesuite
+categories: googlesuite
 ---
 
 # Google Tag Manager and Sub Domains

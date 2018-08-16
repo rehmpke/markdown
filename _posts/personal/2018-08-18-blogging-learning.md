@@ -9,7 +9,7 @@ article_lead: >-
   IE issue search box . . .
 video_content: false
 video_link: ''
-category: personal
+categories: personal
 ---
 
 A [quote from Julia McCoy](https://expresswriters.com/our-top-10-strategies-to-becoming-an-expert-blogger/) in the expresswriters.com site is, 'A blog is just an online journal.'

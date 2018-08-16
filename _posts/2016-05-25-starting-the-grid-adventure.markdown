@@ -9,7 +9,7 @@ article_lead: >-
   IE issue search box . . .
 video_content: false
 video_link: ''
-category: css
+categories: css
 ---
 
 ## What is the crazy grid thing in CSS

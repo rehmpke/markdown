@@ -9,7 +9,7 @@ article_lead: >-
   IE issue search box . . .
 video_content: false
 video_link: ''
-category: server
+categories: server
 ---
 
 # DigitalOcean build and deployment
