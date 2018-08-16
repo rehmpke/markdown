@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Server</h1>
+
+<ul>
+  {% for server in site.categories.server %}
+  <li>
+    <a href="">{{server.title}}</a>
+    <p>{{server.meta}}</p>
+  </li>
+  {% endofor %}
+</ul>

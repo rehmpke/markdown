@@ -9,6 +9,7 @@ article_lead: >-
   IE issue search box . . .
 video_content: false
 video_link: ''
+category: personal
 ---
 
 # Been a searcher for a long time
