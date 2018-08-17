@@ -1,0 +1,20 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "Roger Ehmpke blog site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.8.0",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
