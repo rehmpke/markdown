@@ -1,0 +1,16 @@
+---
+layout: category
+title: Web Security
+category: websecurity
+---
+
+<h1>Web Security</h1>
+
+<ul>
+  {% for websecurity in site.categories.web-security %}
+  <li>
+    <a href="">{{websecurity.title}}</a>
+    <p>{{websecurity.date}}</p>
+  </li>
+  {% endfor %}
+</ul>
