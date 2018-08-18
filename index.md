@@ -9,7 +9,7 @@ description: 'testing home page'
   <div class="row">
     <div class="col">
       <section class="latest-news-widget--rollup__section-margin">
-        <h2 class="latest-news-widget__latest__h latest-news-widget__latest__h--no-underline typography__latest-news-widget__h2"><span class="latest-news-widget__red-underline">All News
+        <h2 class="latest-news-widget__latest__h latest-news-widget__latest__h--no-underline typography__latest-news-widget__h2"><span class="latest-news-widget__red-underline">Blog
           <span id="todaysDate" class="latest-news-widget__latest__date"></span></span>
         </h2>
         <ol id="jsTeaseList" class="latest-news-widget--rollup__latest__tease-group">
