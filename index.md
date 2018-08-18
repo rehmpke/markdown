@@ -98,4 +98,11 @@ description: 'testing home page'
       <a style="margin-top: 15px" href="{{ page.baseurl }}archive/" class="btn btn-primary">View older articles</a>
     </div>
   </div>
+  <h4 class="text-uppercase title-aside">Tags</h4>
+<div class="block-underline">
+  <ul class="categories-list">
+    <li><a href="/categories/web-security" title="articles tagged web security">Web Security</a></li>
+    <li><a href="/categories/server" title="articles tagged server">Server</a></li>
+  </ul>
+</div>
 </div>
