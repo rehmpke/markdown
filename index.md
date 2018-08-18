@@ -1,7 +1,7 @@
 ---
 layout: default
 baseurl: '../'
-title: Home page
+title: Blog
 description: 'testing home page'
 ---
 
