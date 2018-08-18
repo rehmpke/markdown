@@ -92,6 +92,7 @@ description: 'testing home page'
         </ol>
       </section>
     </div>
+
   </div>
   <div class="row">
     <div class="col text-center">
@@ -101,8 +102,8 @@ description: 'testing home page'
   <h4 class="text-uppercase title-aside">Tags</h4>
 <div class="block-underline">
   <ul class="categories-list">
-    <li><a href="/categories/web-security" title="articles tagged web security">Web Security</a></li>
-    <li><a href="/categories/server" title="articles tagged server">Server</a></li>
+    <li><a href="/category/server/" title="articles tagged server">Server</a></li>
+    <li><a href="/category/web-security/" title="articles tagged web security">Web Security</a></li>
   </ul>
 </div>
 </div>
