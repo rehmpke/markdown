@@ -16,7 +16,11 @@ categories: server
 
 Trying to make sure to remember these components of ssh setup.
 
-I realized several things today first off I was not setup to use ssh correctly and that there is something called `ssh-add -l`, that lists out what ssh keys have been added to my [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent), a program to hold private keys which is used for public key authentication, more can be read on [OpenBSD](https://man.openbsd.org/ssh-agent). The mac has one setup that ties the agent to the keychain. this is helpful in it allows you to type your ssh into one location and just load your files.
+I realized several things today first off I was not setup to use ssh correctly and that there is something called 
+
+    ssh-add -l
+
+, that lists out what ssh keys have been added to my [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent), a program to hold private keys which is used for public key authentication, more can be read on [OpenBSD](https://man.openbsd.org/ssh-agent). The mac has one setup that ties the agent to the keychain. this is helpful in it allows you to type your ssh into one location and just load your files.
 
 I will clarify this shortly.
 
@@ -33,3 +37,7 @@ has a nice piece about Check that you are connecting to the correct server
 this lead me to a large amount of detail. I noticed it was looking for the requested key id_rsa
 
 At that point I typed github key does it have to be id_rsa into google.
+
+
+
+Mac `Keychain access` in alfred or spotlight check to see if keys are loaded.
