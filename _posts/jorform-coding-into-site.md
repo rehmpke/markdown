@@ -12,14 +12,17 @@ video_link: ''
 categories: server
 ---
 
-# Jotform coding into site
+# Jotform coding into our static Jekyll sites
+Getting Jotform into our Jekyll sites as we don't want to use iframes in the compiled pages on the site. This came up as we were testing between Target x and Jotform.
 
 ## Get code out of Jotform
 
-To get the code out of Jotform we need to hit publish and then click on the link.
+To get the code out of Jotform we need to:
+1. hit publish
+2. Click on the link.
+3. Click view source
+4. Copy and save out to html page.
 
-Then we click view source and copy and save out to html page.
-
-## Jotform into our code with Jquery
+## Jotform Jotform into our code with Jquery
 
 We need to make the code work as it is using $ sign and our jquery is as well which is causing a conflict.
