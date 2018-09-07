@@ -82,17 +82,17 @@ There were a number of divs tags of equal length but different classes as guid n
 
 csplit -k -n 3 products.txt '/^@@@/' {'999'}; for i in xx*; do sed -i '' 's/@@@/---/g' $i; done; for i in xx*; do mv $i `egrep -m1 -e 'title:.*' $i | sed -e s/[^\]\[A-Za-z0-9~.,_{}\(\)\'\-\+]/-/g -e s/title---//`.md; done
 
-csplit -k -n 3 products.txt
+    $ csplit -k -n 3 products.txt
 
-csplit -f text -- input.txt '//' "{$(wc -l input.txt)}"
-for x in text[0-9]*; do mv -- "$x" "$x.txt"; done
+    $ csplit -f text -- input.txt '//' "{$(wc -l input.txt)}" for x in text[0-9]*; do mv -- "$x" "$x.txt"; done
 
-csplit -b '%d.txt' -f text -- products.txt '//' '{*}'
-csplit products.txt /\n/ {*}
-csplit products.txt /\n/ {258}
+    $ csplit -b '%d.txt' -f text -- products.txt '//' '{*}'
+    
+    $ csplit products.txt /\n/ {*}
+    $ csplit products.txt /\n/ {258}
 
-csplit products.txt /^\s*0/ {258}
-csplit products.txt /=====/ {258}
+    $ csplit products.txt /^\s*0/ {258}
+    $ csplit products.txt /=====/ {258}
 
 ## cSplit
 
@@ -100,14 +100,15 @@ Used csplit to separate the old json file into individual files. I added the fla
  
     csplit -k -f newsevent -n 3 news_event_archive.json /=====/ {285}
 
-csplit -k -n 3 products.txt '/=====/' {'999'}; for i in xx*; do sed -i '' 's/@@@/---/g' $i; done; for i in xx*; do mv $i `egrep -m1 -e 'title:.*' $i | sed -e s/[^\]\[A-Za-z0-9~.,_{}\(\)\'\-\+]/-/g -e s/title---//`.md; done
+    csplit -k -n 3 products.txt '/=====/' {'999'}; for i in xx*; do sed -i '' 's/@@@/---/g' $i; done; for i in xx*; do mv $i `egrep -m1 -e 'title:.*' $i | sed -e s/[^\]\[A-Za-z0-9~.,_{}\(\)\'\-\+]/-/g -e s/title---//`.md; done
 
-csplit -k -n 3 products.txt '/=====/' {'999'}; for i in xx*; do mv $i `egrep -m1 -e 'title:.*' $i | sed -e s/[^\]\[A-Za-z0-9~.,_{}\(\)\'\-\+]/-/g -e s/title---//`.md; done   |  
-cd /desktop
-cd ..
-sed -i 's/\"/"/g' changed.json
-sed -i 's/ \\"/"/g' changed.json
-sed -i 's/ \\"/"/g' changed.json
+    $ csplit -k -n 3 products.txt '/=====/' {'999'}; for i in xx*; do mv $i `egrep -m1 -e 'title:.*' $i | sed -e s/[^\]\[A-Za-z0-9~.,_{}\(\)\'\-\+]/-/g -e s/title---//`.md; done   |  
+    
+    $ cd /desktop
+    $ cd ..
+    $ sed -i 's/\"/"/g' changed.json
+    $ sed -i 's/ \\"/"/g' changed.json
+    $ sed -i 's/ \\"/"/g' changed.json
 
 ## Reverse the csplit
 
