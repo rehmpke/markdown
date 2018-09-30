@@ -1,8 +1,8 @@
 ---
 layout: default
-baseurl: '../'
+baseurl: "../"
 title: Blog
-description: 'testing home page'
+description: "testing home page"
 ---
 
 <div class="container position__offset-fixed-nav">
@@ -96,7 +96,7 @@ description: 'testing home page'
   </div>
   <div class="row">
     <div class="col text-center">
-      <a style="margin-top: 15px" href="{{ page.baseurl }}archive/" class="btn btn-primary">ssView older articles</a>
+      <a style="margin-top: 15px" href="{{ page.baseurl }}archive/" class="btn btn-primary">View older articles</a>
     </div>
   </div>
   <h4 class="text-uppercase title-aside">Tags</h4>
